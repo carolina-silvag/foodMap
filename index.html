@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>foodMap</title>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <header id="header" class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 title-center">
+        <h1 class="title text-center">FoodMap</h1>        
+      </div>     
+    </div>
+  </header>
+  <section class="container-fluid">
+    <div class="page-header titlePrincipal text-center">
+      <h2>FoodMap</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 maps" id="map">
+      </div>
+    </div>
+    <div class="subTitle text-center">
+      <h3>Comida cerca de ti</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>  
+      </div>
+    </div>
+    <div class="container-fluid" id="listFood">
+      
+    </div>
+  </section>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfdR2-p7bETCxjk_1qQzzDDmuHD47_lsI&callback=initialize&libraries=places" async defer></script>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
