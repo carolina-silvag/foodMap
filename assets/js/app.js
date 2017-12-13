@@ -93,9 +93,9 @@ function createElement(place) {
       $("#listFood").append('<div class="row listImg"></div>');
     }
 
-    var urlImage = place.photos[0].getUrl({'maxWidth': 400, 'maxHeight': 400});
+    var urlImage = place.photos[0].getUrl({'maxWidth': 300, 'maxHeight': 300});
     console.log("div", $("#listFood"));
-    $("#listFood .row").last().append('<div class="col-xs-4"><img class="img img-responsive full-width foodImg" src="'+urlImage+'"></div>');
+    $("#listFood .row").last().append('<div class="col-xs-4"><img class="img img-responsive foodImg" src="'+urlImage+'"></div>');
     cols++;
 
     if (cols == 3) {
