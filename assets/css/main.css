@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  font-size: 200%;
+  /*font-size: 200%;*/
   color: #d67b29;
 }
 
@@ -28,12 +28,31 @@ header {
 .subTitle {
   color: #d67b29;
 }
-.listImg {
-  padding: 2% 0 2% 0; 
+
+.imgcont {
+  padding: 1%;
+}
+.imgContenedor {
+  height: 100%;
+  width: 100%;
 }
 
-/*img {
-  width: 50%;
-}*/
+.nameList {
+  color: red;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/*modal*/
 
+.local {
+  margin: 25% 10% 0 10%;
+  
+}
+#map2 {
+  /*width: 60%;*/
+  height: 30vh;
+
+}
