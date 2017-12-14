@@ -23,14 +23,18 @@ header {
 }
 #map {
   width: 100%;
-  height: 20em;
+  height: 30vh;
 }
 .subTitle {
   color: #d67b29;
 }
 .listImg {
-  padding: 2% 0 2% 0;
+  padding: 2% 0 2% 0; 
 }
+
+/*img {
+  width: 50%;
+}*/
 .foodImg {
   width: 100%;
   height: 6em;
