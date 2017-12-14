@@ -130,6 +130,10 @@ function createElement(place, index) {
     $('.img-'+index).css({'background-image': 'url('+urlImage+')', 'height': '10em', 'background-repeat': 'no-repeat', 'background-position': 'center center'});
     $('.img-'+index).last().append('<span class="nameList">'+name+'</span>');
     $('.img-'+index+' h2').hide();
+      /*$('.btnClose').click(function(event) {
+      $('.name').last().html('');
+      $('.direccion').last().html('');
+      });*/
     $('.img-'+index).click(function(event) {
       console.log(place.name, place.photos, place.geometry.location);
       $('#modalLocal').modal('show');
