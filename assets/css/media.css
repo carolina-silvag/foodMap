@@ -1,0 +1,8 @@
+@media (max-width: 412px) {
+  #map { 
+  	height: 40vh;
+  }
+  .nameList {
+  	height: 15vh;
+  }
+}

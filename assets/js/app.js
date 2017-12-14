@@ -128,8 +128,8 @@ function createElement(place, index) {
 
     $("#listFood .row").last().append('<div class="col-xs-4 imgcont"><div class="img-'+index+' imgContenedor data-toggle="modal" data-target="#modalLocal""></div></div>');
     $('.img-'+index).css({'background-image': 'url('+urlImage+')', 'height': '10em', 'background-repeat': 'no-repeat', 'background-position': 'center center'});
-    $('.img-'+index).last().append('<span class="nameList">'+name+'</span>');
-    $('.img-'+index+' h2').hide();
+    $('.img-'+index).last().append('<span class="nameList text-center"><strong>'+name+'</strong></span>');
+    $('.img-'+index+' span').hide();
       /*$('.btnClose').click(function(event) {
       $('.name').last().html('');
       $('.direccion').last().html('');
@@ -155,7 +155,7 @@ function createElement(place, index) {
       
     });
     $('.img-'+index).mouseover(function(event) {
-      $('.img-'+index).css({'opacity': '0.8'})
+      $('.img-'+index).css({'opacity': '0.5'})
       $('.img-'+index+' span').show();
     });
     $('.img-'+index).mouseleave(function(event) {
