@@ -92,9 +92,9 @@ function createElement(place, index) {
       $("#listFood").append('<div class="row listImg"></div>');
     }
 
-    var urlImage = place.photos[0].getUrl({'maxWidth': 400, 'maxHeight': 400});
+    var urlImage = place.photos[0].getUrl({'maxWidth': 300, 'maxHeight': 300});
     $("#listFood .row").last().append('<div class="col-xs-4 img-'+index+'"></div>');
-    $('.img-'+index).css({'background-image': 'url('+urlImage+')', 'height': '25vh', 'background-repeat': 'no-repeat', 'background-position': 'bottom 7% center'});
+    $('.img-'+index).css({'background-image': 'url('+urlImage+')', 'height': '20vh', 'background-repeat': 'no-repeat', 'background-position': 'bottom 7% center'});
     cols++;
 
     if (cols == 3) {
