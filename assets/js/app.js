@@ -47,8 +47,7 @@ function initialize() {
 
   $('#modalLocal').on('shown.bs.modal', function (e) {
     google.maps.event.trigger(map2, "resize");
-    console.log("entre!!")
-  })
+  });
 }
 
 function setDefaultMap(defaultPosition) {
@@ -137,8 +136,8 @@ function createElement(place, index) {
     $('.img-'+index).click(function(event) {
       console.log(place.name, place.photos, place.geometry.location);
       $('#modalLocal').modal('show');
-      $('.name').last().append(name);
-      $('.direccion').last().append('<span>'+direccion+'</span>')
+      $('#name').html(name);
+      $('#direccion').html('<span>'+direccion+'</span>');
       console.log(name);
       map2 = new google.maps.Map(document.getElementById('map2'), {
         center: place.geometry.location,
@@ -155,11 +154,11 @@ function createElement(place, index) {
       
     });
     $('.img-'+index).mouseover(function(event) {
-      $('.img-'+index).css({'opacity': '0.5'})
+      $('.img-'+index).css({'opacity': '0.5'});
       $('.img-'+index+' span').show();
     });
     $('.img-'+index).mouseleave(function(event) {
-      $('.img-'+index).css({'opacity': '1'})
+      $('.img-'+index).css({'opacity': '1'});
       $('.img-'+index+' span').hide();
     });
 
